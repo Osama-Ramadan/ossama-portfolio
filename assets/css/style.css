@@ -142,6 +142,56 @@ a:focus-visible {
   padding: 5.4rem 0 4.8rem;
 }
 
+.home-main {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 1.6rem;
+  padding-top: 2.4rem;
+  align-items: start;
+}
+
+.home-sidebar {
+  position: sticky;
+  top: 94px;
+}
+
+.sidebar-card {
+  padding: 1rem;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #fffefa 0%, #fffdf8 100%);
+}
+
+.sidebar-contact-list {
+  margin-top: 0.95rem;
+  list-style: none;
+  border-top: 1px solid var(--border);
+  padding-top: 0.85rem;
+  display: grid;
+  gap: 0.46rem;
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.sidebar-contact-list a {
+  font-weight: 700;
+}
+
+.home-content {
+  min-width: 0;
+}
+
+.home-content .hero {
+  padding: 0.2rem 0 2.8rem;
+}
+
+.home-content .section {
+  padding-top: 0;
+}
+
+.home-content .section + .section {
+  margin-top: 3rem;
+}
+
 .hero-layout {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
@@ -648,6 +698,23 @@ a:focus-visible {
   .publication-topline {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .home-main {
+    grid-template-columns: 1fr;
+    padding-top: 1.6rem;
+  }
+
+  .home-sidebar {
+    position: static;
+  }
+
+  .sidebar-card {
+    max-width: 520px;
+  }
+
+  .home-content .hero {
+    padding-top: 1.2rem;
   }
 
   .hero-layout {

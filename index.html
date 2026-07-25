@@ -3,101 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
+  <title>Ossama Ahmed | Autonomous Systems & Control Research</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navigation -->
   <nav class="navbar">
-    <div class="logo">YourName</div>
+    <div class="logo">Ossama Ahmed</div>
     <ul class="nav-links">
-      <li><a href="#projects">Projects</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Hero Section -->
   <header class="hero">
-    <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
-    <p class="subtitle">Building intelligent robotics applications, control systems, and open-source tools.</p>
+    <span class="badge hero-badge">Research Associate @ Fraunhofer IML</span>
+    <h1>Bridging <span class="highlight">Classical Control</span> & <span class="highlight">Machine Learning</span></h1>
+    <p class="subtitle">
+      Integrating data-driven learning with classical control and motion planning algorithms to build autonomous systems with formal stability and safety guarantees.
+    </p>
     <div class="hero-cta">
-      <a href="#projects" class="btn primary">View Applications</a>
-      <a href="https://github.com/yourusername" target="_blank" class="btn secondary">GitHub Profile</a>
+      <a href="mailto:osa.ram2020@gmail.com" class="btn primary">Get in Touch</a>
+      <a href="https://www.linkedin.com/in/osama-ramadan" target="_blank" class="btn secondary">LinkedIn Profile</a>
+      <a href="https://github.com/posquito" target="_blank" class="btn secondary">GitHub</a>
     </div>
   </header>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Featured Applications</h2>
-    <div class="projects-grid">
-      
-      <!-- Project Card 1 -->
-      <article class="card">
-        <div class="card-header">
-          <h3>Autonomous Navigation System</h3>
-          <span class="badge">ROS2 / C++</span>
-        </div>
-        <p>A real-time path planning and obstacle avoidance framework implemented for mobile robots with integrated safety barriers.</p>
-        <div class="card-tech">
-          <span>C++</span>
-          <span>ROS2</span>
-          <span>Gazebo</span>
-        </div>
-        <div class="card-links">
-          <a href="https://github.com/yourusername/repo-name" target="_blank">Repository &rarr;</a>
-          <a href="#" target="_blank">Demo / Docs &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Project Card 2 -->
-      <article class="card">
-        <div class="card-header">
-          <h3>Supply Chain Simulator</h3>
-          <span class="badge">Python / Simulation</span>
-        </div>
-        <p>A graph-based logistics and fulfillment simulator designed to optimize dynamic vehicle assignment and inventory flow.</p>
-        <div class="card-tech">
-          <span>Python</span>
-          <span>NetworkX</span>
-          <span>PyTest</span>
-        </div>
-        <div class="card-links">
-          <a href="https://github.com/yourusername/repo-name" target="_blank">Repository &rarr;</a>
-        </div>
-      </article>
-
-      <!-- Add more cards as needed -->
-
-    </div>
-  </section>
-
-  <!-- About / Tech Stack -->
+  <!-- Research Objective / About -->
   <section id="about" class="section alt-bg">
-    <h2>About & Core Skills</h2>
-    <p>I specialize in building robust applications bridging complex algorithmic design and practical implementation.</p>
-    <div class="skills-list">
-      <span class="skill-tag">C++ / Python</span>
-      <span class="skill-tag">Linux / Bash</span>
-      <span class="skill-tag">ROS2 Middleware</span>
-      <span class="skill-tag">Control Systems</span>
-      <span class="skill-tag">Docker / CI/CD</span>
+    <div class="container">
+      <h2>Research Focus</h2>
+      <div class="focus-grid">
+        <div class="focus-card">
+          <h3>Theoretical Methodology</h3>
+          <p>Leveraging information-theoretic metrics (e.g., Fisher information and entropy parameters) to reason about model uncertainty, guide safe system identification, and handle model drift in real time.</p>
+        </div>
+        <div class="focus-card">
+          <h3>Algorithmic Frameworks</h3>
+          <p>Designing modular, low-level orchestration architectures that embed physics-based kinematic models directly into learning loops to close the sim-to-real gap.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <footer id="contact" class="footer">
-    <h2>Get in Touch</h2>
-    <p>Interested in collaborating or discussing an application?</p>
-    <div class="footer-links">
-      <a href="mailto:your.email@example.com">Email</a>
-      <a href="https://github.com/yourusername" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Research & Engineering Experience</h2>
+      <div class="timeline">
+        
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Fraunhofer Institute for Material Flow and Logistics (IML)</h3>
+              <span class="role">Research Associate (Full-Time)</span>
+            </div>
+            <span class="date">Jun 2023 – Present | Dortmund, Germany</span>
+          </div>
+          <ul>
+            <li>Led R&D of automated system identification and optimization pipelines to systematically close the sim-to-real gap across mobile platforms (Ackermann, differential, holonomic).</li>
+            <li>Engineered a custom modular ROS2 hardware orchestration framework using Lifecycle nodes and SocketCAN C++ drivers to control industrial motor state machines directly.</li>
+            <li>Designed and validated high-fidelity rigid-body models inside NVIDIA Isaac Sim using telemetry data and black-box optimization.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>STILL GmbH (in collab. with TU Hamburg)</h3>
+              <span class="role">Graduate Research Student & Master's Candidate</span>
+            </div>
+            <span class="date">2022 – 2023 | Hamburg, Germany</span>
+          </div>
+          <ul>
+            <li>Formulated and implemented a Predictive Path Planning pipeline utilizing Model Predictive Control (MPC) for an autonomous industrial forklift operating in constrained logistics spaces.</li>
+            <li>Fused classical kinematics with predictive trajectory generation to optimize safety bounds and path smoothness.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div>
+              <h3>Universidad Carlos III de Madrid (UC3M)</h3>
+              <span class="role">Undergraduate Research Assistant</span>
+            </div>
+            <span class="date">2018 – 2019 | Madrid, Spain</span>
+          </div>
+          <ul>
+            <li>Implemented and optimized probabilistic Occupancy Grid Mapping algorithms to process sensor telemetry and handle high-uncertainty spatial data in real time.</li>
+          </ul>
+        </div>
+
+      </div>
     </div>
-    <p class="copyright">&copy; 2026 Your Name. Powered by GitHub Pages.</p>
+  </section>
+
+  <!-- Publications Section -->
+  <section id="publications" class="section alt-bg">
+    <div class="container">
+      <h2>Publications</h2>
+      <div class="pub-grid">
+        
+        <article class="card pub-card">
+          <div class="card-header">
+            <span class="pub-venue">IEEE CASE 2025</span>
+          </div>
+          <h3>Automated Tuning of Non-Differentiable Rigid Body Simulation Models for Wheeled Mobile Robots</h3>
+          <p class="pub-authors">M. Wiedemann, O. Ahmed, M. Hatwar, et al.</p>
+          <p class="pub-desc">Formulated a black-box optimization pipeline using real-world motion data to automatically tune non-differentiable physics simulation parameters across differential, Ackermann, and omnidirectional kinematics.</p>
+        </article>
+
+        <article class="card pub-card">
+          <div class="card-header">
+            <span class="pub-venue">IEEE ICRA 2024</span>
+          </div>
+          <h3>Simulation Modeling of Highly Dynamic Omnidirectional Mobile Robots Based on Real-World Data</h3>
+          <p class="pub-authors">M. Wiedemann, O. Ahmed, A. Dieckhofer, R. Gasoto, S. Kerner</p>
+          <p class="pub-desc">Developed a data-driven pipeline utilizing Motion Capture systems to bridge the sim-to-real gap for holonomic mobile logistics platforms.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills & Competencies</h2>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Robotics & Middleware</h4>
+          <div class="skills-list">
+            <span class="skill-tag">ROS2 (Lifecycle Nodes, Containers)</span>
+            <span class="skill-tag">NVIDIA Isaac Sim</span>
+            <span class="skill-tag">URDF / Xacro</span>
+            <span class="skill-tag">Gazebo</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4>Programming & Software</h4>
+          <div class="skills-list">
+            <span class="skill-tag">C++ (17/20)</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">MATLAB / Simulink</span>
+            <span class="skill-tag">Embedded Linux</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Git</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4>Control & Math Libraries</h4>
+          <div class="skills-list">
+            <span class="skill-tag">Eigen</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">NumPy / SciPy</span>
+            <span class="skill-tag">System Identification</span>
+            <span class="skill-tag">MPC</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4>Hardware & Communication</h4>
+          <div class="skills-list">
+            <span class="skill-tag">SocketCAN / CAN bus</span>
+            <span class="skill-tag">PCB Design (EagleCAD)</span>
+            <span class="skill-tag">SPI / I2C</span>
+            <span class="skill-tag">HIL Testing</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <h2>Let's Connect</h2>
+      <p>Dortmund, Germany | Open to research collaborations in control theory and autonomous systems.</p>
+      <div class="footer-links">
+        <a href="mailto:osa.ram2020@gmail.com">osa.ram2020@gmail.com</a>
+        <a href="https://www.linkedin.com/in/osama-ramadan" target="_blank">LinkedIn</a>
+        <a href="https://github.com/posquito" target="_blank">GitHub</a>
+      </div>
+      <p class="copyright">&copy; 2026 Ossama Ahmed. Built with GitHub Pages.</p>
+    </div>
   </footer>
 
-  <script src="assets/js/main.js"></script>
 </body>
 </html>

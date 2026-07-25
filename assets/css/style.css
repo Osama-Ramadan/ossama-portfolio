@@ -144,7 +144,7 @@ a:focus-visible {
 
 .home-main {
   display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
+  grid-template-columns: minmax(250px, 290px) minmax(0, 1fr);
   gap: 1.6rem;
   padding-top: 2.4rem;
   align-items: start;
@@ -262,7 +262,8 @@ a:focus-visible {
 
 .profile-photo-wrap {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 3 / 4;
+  max-height: 360px;
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -679,7 +680,7 @@ a:focus-visible {
   transform: translateY(0);
 }
 
-@media (max-width: 920px) {
+@media (max-width: 780px) {
   .navbar {
     min-height: auto;
     padding: 0.9rem 0;

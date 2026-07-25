@@ -21,3 +21,22 @@ if ("IntersectionObserver" in window) {
 } else {
   revealElements.forEach((element) => element.classList.add("is-visible"));
 }
+
+const pageToKey = {
+  "index.html": "home",
+  "": "home",
+  "research.html": "research",
+  "publications.html": "publications",
+  "projects.html": "projects",
+  "cv.html": "cv",
+};
+
+const path = window.location.pathname.split("/").pop() || "index.html";
+const activeKey = pageToKey[path];
+
+if (activeKey) {
+  const activeLink = document.querySelector(`[data-nav="${activeKey}"]`);
+  if (activeLink) {
+    activeLink.classList.add("active");
+  }
+}

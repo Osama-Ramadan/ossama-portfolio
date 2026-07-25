@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research statement and PhD interests of Ossama Ahmed in autonomous systems and control.">
+  <title>Research | Ossama Ahmed</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="bg-orb orb-a" aria-hidden="true"></div>
+  <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="index.html">Ossama Ahmed</a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-nav="home">Home</a></li>
+        <li><a href="research.html" data-nav="research">Research</a></li>
+        <li><a href="publications.html" data-nav="publications">Publications</a></li>
+        <li><a href="projects.html" data-nav="projects">Projects</a></li>
+        <li><a href="cv.html" data-nav="cv">CV</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero container reveal">
+      <p class="eyebrow">Research Statement</p>
+      <h1>Toward reliable and adaptive autonomy under uncertainty.</h1>
+      <p class="subtitle">
+        My work integrates model-based control, machine learning, and system identification to design robotic
+        systems that are both high-performing and verifiably stable in real-world deployment.
+      </p>
+    </section>
+
+    <section class="section container reveal">
+      <div class="section-heading">
+        <h2>Current Research Direction</h2>
+        <p>Bridging classical and data-driven methods in a rigorous, implementation-oriented framework.</p>
+      </div>
+      <div class="focus-grid">
+        <article class="card focus-card">
+          <h3>Uncertainty-Aware Identification</h3>
+          <p>Using information-theoretic indicators (Fisher information and entropy-based criteria) to guide safe model identification and detect model drift in operational robotics systems.</p>
+        </article>
+        <article class="card focus-card">
+          <h3>Model Calibration for Sim-to-Real</h3>
+          <p>Automating calibration of non-differentiable rigid-body simulation models from telemetry, improving transfer reliability for control and planning policies.</p>
+        </article>
+        <article class="card focus-card">
+          <h3>Learning-Enabled Control Pipelines</h3>
+          <p>Embedding kinematic and dynamic priors into learning loops to increase sample efficiency while maintaining formal safety and stability constraints.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-alt reveal">
+      <div class="container">
+        <div class="section-heading">
+          <h2>PhD Interests</h2>
+          <p>Research problems I want to investigate during doctoral studies.</p>
+        </div>
+        <div class="quick-grid">
+          <article class="card quick-card">
+            <h3>Robust Adaptive MPC</h3>
+            <p>Combining adaptive identification with robust MPC formulations to handle changing system dynamics and uncertainty bounds online.</p>
+          </article>
+          <article class="card quick-card">
+            <h3>Structure-Preserving Learning</h3>
+            <p>Designing hybrid model classes that preserve controllability and passivity constraints while learning residual dynamics from data.</p>
+          </article>
+          <article class="card quick-card">
+            <h3>Principled Sim-to-Real Metrics</h3>
+            <p>Defining measurable discrepancy metrics between simulated and real trajectories to drive automated simulator tuning and policy transfer quality.</p>
+          </article>
+          <article class="card quick-card">
+            <h3>Safety in Learning Loops</h3>
+            <p>Integrating invariant sets, safety filters, and confidence-aware exploration mechanisms into learning-based autonomous control stacks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container reveal">
+      <div class="section-heading">
+        <h2>Methodology and Tooling</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="card skill-card">
+          <h3>Control and Optimization</h3>
+          <div class="skills-list">
+            <span>MPC</span>
+            <span>LQR / TV-LQR</span>
+            <span>Numerical Optimization</span>
+            <span>System Identification</span>
+          </div>
+        </article>
+        <article class="card skill-card">
+          <h3>Robotics Infrastructure</h3>
+          <div class="skills-list">
+            <span>ROS2 Lifecycle Nodes</span>
+            <span>NVIDIA Isaac Sim</span>
+            <span>SocketCAN and CAN bus</span>
+            <span>Embedded Linux</span>
+          </div>
+        </article>
+        <article class="card skill-card">
+          <h3>Scientific Computing</h3>
+          <div class="skills-list">
+            <span>Python</span>
+            <span>C++17/20</span>
+            <span>PyTorch</span>
+            <span>NumPy / SciPy / Eigen</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer reveal">
+    <div class="container footer-grid">
+      <div>
+        <h2>Contact</h2>
+        <p>Happy to share a detailed research proposal and discuss potential PhD alignment.</p>
+      </div>
+      <div class="contact-list" aria-label="Contact links">
+        <a href="mailto:osa.ram2020@gmail.com">osa.ram2020@gmail.com</a>
+        <a href="https://www.linkedin.com/in/osama-ramadan" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+        <a href="https://github.com/posquito" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+      </div>
+    </div>
+    <p class="copyright">Copyright 2026 Ossama Ahmed. Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

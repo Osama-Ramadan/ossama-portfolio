@@ -122,8 +122,28 @@ a:focus-visible {
   text-decoration: none;
 }
 
+.nav-links a.active {
+  color: var(--accent);
+  position: relative;
+}
+
+.nav-links a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--accent);
+}
+
 .hero {
   padding: 5.4rem 0 4.8rem;
+}
+
+.page-hero {
+  padding: 4.1rem 0 2.8rem;
 }
 
 .eyebrow {
@@ -242,6 +262,92 @@ a:focus-visible {
   color: var(--text-muted);
   margin-top: 0.42rem;
   font-size: 0.99rem;
+}
+
+.text-link {
+  display: inline-block;
+  margin-top: 0.65rem;
+  font-weight: 700;
+}
+
+.quick-grid,
+.project-grid,
+.publication-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.quick-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.quick-card {
+  padding: 1.1rem 1.2rem;
+}
+
+.quick-card h3 {
+  font-size: 1.03rem;
+  margin-bottom: 0.35rem;
+}
+
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.project-card {
+  padding: 1.2rem 1.25rem;
+}
+
+.project-card h3 {
+  font-size: 1.06rem;
+  margin-bottom: 0.35rem;
+}
+
+.project-meta {
+  color: var(--accent);
+  font-size: 0.86rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.publication-list {
+  grid-template-columns: 1fr;
+}
+
+.publication-item {
+  padding: 1.2rem 1.25rem;
+}
+
+.publication-item h2 {
+  font-size: 1.18rem;
+  line-height: 1.33;
+  margin-bottom: 0.38rem;
+}
+
+.publication-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.callout-card {
+  padding: 1.3rem;
+}
+
+.callout-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.45rem;
+}
+
+.callout-card .btn {
+  margin-top: 0.9rem;
+}
+
+.compact-timeline .timeline-item {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .card {
@@ -454,6 +560,11 @@ a:focus-visible {
 
   .timeline-head {
     flex-direction: column;
+  }
+
+  .publication-topline {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

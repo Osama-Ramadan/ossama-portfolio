@@ -142,6 +142,40 @@ a:focus-visible {
   padding: 5.4rem 0 4.8rem;
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.2rem;
+  align-items: start;
+}
+
+.hero-main {
+  padding-right: 0.4rem;
+}
+
+.hero-intro {
+  margin-top: 0.35rem;
+  color: var(--text-muted);
+  font-size: 1.02rem;
+  font-weight: 600;
+}
+
+.hero-name {
+  margin-top: 0.12rem;
+  max-width: 920px;
+  font-family: var(--font-serif);
+  font-size: clamp(2.4rem, 5.2vw, 4.15rem);
+  letter-spacing: -0.024em;
+  line-height: 1.04;
+}
+
+.hero-role {
+  margin-top: 0.58rem;
+  color: var(--accent);
+  font-size: clamp(1rem, 1.8vw, 1.2rem);
+  font-weight: 700;
+}
+
 .page-hero {
   padding: 4.1rem 0 2.8rem;
 }
@@ -168,6 +202,55 @@ a:focus-visible {
   font-size: clamp(2rem, 4.6vw, 3.45rem);
   letter-spacing: -0.018em;
   line-height: 1.14;
+}
+
+.hero-profile {
+  padding: 1rem;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #fffefa 0%, #fffdf8 100%);
+}
+
+.profile-photo-wrap {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #f6f1e7;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.profile-details {
+  margin-top: 0.85rem;
+}
+
+.profile-details h2 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  line-height: 1.2;
+}
+
+.profile-details p {
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+  font-weight: 600;
+}
+
+.profile-points {
+  margin-top: 0.7rem;
+  padding-left: 1rem;
+  color: var(--text-muted);
+  font-size: 0.91rem;
+}
+
+.profile-points li + li {
+  margin-top: 0.3rem;
 }
 
 .subtitle {
@@ -565,6 +648,14 @@ a:focus-visible {
   .publication-topline {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-profile {
+    max-width: 460px;
   }
 }
 

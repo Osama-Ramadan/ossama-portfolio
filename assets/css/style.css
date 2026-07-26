@@ -702,12 +702,100 @@ a:focus-visible {
 
 .contact-list {
   display: grid;
-  gap: 0.42rem;
+  gap: 0.62rem;
   justify-items: start;
 }
 
-.contact-list a {
-  font-weight: 700;
+.contact-link {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.68rem;
+  padding: 0.62rem 0.78rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--surface-strong);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color 0.24s ease, box-shadow 0.24s ease, transform 0.24s ease;
+}
+
+.contact-link:hover,
+.contact-link:focus-visible {
+  text-decoration: none;
+  border-color: #bccfd5;
+  box-shadow: 0 10px 24px -22px rgba(16, 40, 58, 0.75);
+  transform: translateY(-1px);
+}
+
+.contact-link-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid #cadde2;
+  background: #f2f8f9;
+  color: #31515f;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-link-icon svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+.contact-link[href^="mailto:"] .contact-link-icon {
+  border-color: #c8dce0;
+  background: #eef7f8;
+  color: #255463;
+}
+
+.contact-link[href^="tel:"] .contact-link-icon {
+  border-color: #d4dbc8;
+  background: #f4f8ee;
+  color: #4a5d31;
+}
+
+.contact-link[href*="linkedin.com"] .contact-link-icon {
+  border-color: #c8d9ea;
+  background: #eef4fb;
+  color: #184f8d;
+}
+
+.contact-link[href*="github.com"] .contact-link-icon {
+  border-color: #d5d4de;
+  background: #f4f3f8;
+  color: #35324a;
+}
+
+.contact-link[href*="linkedin.com"]:hover,
+.contact-link[href*="linkedin.com"]:focus-visible {
+  border-color: #b6cfe7;
+}
+
+.contact-link[href*="github.com"]:hover,
+.contact-link[href*="github.com"]:focus-visible {
+  border-color: #c8c6d7;
+}
+
+.contact-link-text {
+  display: grid;
+  gap: 0.08rem;
+  min-width: 0;
+}
+
+.contact-link-text strong {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+.contact-link-text span {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
 }
 
 .copyright {
@@ -787,6 +875,10 @@ a:focus-visible {
   .btn {
     width: 100%;
     text-align: center;
+  }
+
+  .contact-link {
+    padding: 0.58rem 0.7rem;
   }
 }
 
